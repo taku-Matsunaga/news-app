@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.11",
+    "@react-navigation/bottom-tabs": "^5.11.15",
     "@react-navigation/native": "^5.9.8",
     "@react-navigation/stack": "^5.14.9",
+    "@redux-devtools/extension": "^3.2.2",
     "axios": "^0.26.1",
     "expo": "~44.0.0",
     "expo-constants": "~13.0.1",
@@ -25,7 +27,9 @@
     "react-native-safe-area-context": "3.3.2",
     "react-native-screens": "~3.10.1",
     "react-native-web": "0.17.1",
-    "react-native-webview": "11.15.0"
+    "react-native-webview": "11.15.0",
+    "react-redux": "^7.2.8",
+    "redux": "^4.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"

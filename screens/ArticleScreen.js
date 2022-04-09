@@ -3,6 +3,7 @@ import { Text, StyleSheet, TouchableOpacity, View } from 'react-native';
 import WebView from 'react-native-webview';
 import { useDispatch, useSelector } from 'react-redux';
 import ClipButton from '../components/ClipButton';
+import Loading from '../components/Loading';
 import { addClip } from '../store/actions/user';
 import { deleteClip } from '../store/actions/user';
 
@@ -35,7 +36,11 @@ export default function ArticleScreen({ route }) {
   return (
     <View style={styles.container}>
       <ClipButton onPress={toggleClip} enabled={isClipped()} />
-      <WebView source={{ uri: article.url }} />
+      <WebView 
+      source={{ uri: article.url }} 
+      startInLoadingState={true}
+      renderLoading={() => <Loading />}
+      />
     </View>
   );
 }
